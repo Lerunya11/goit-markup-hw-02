@@ -1,0 +1,32 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #2e2f42;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a:hover,
+a:focus {
+  color: #404bbf; /* как в style guide */
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf;
+}
