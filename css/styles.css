@@ -1,28 +1,8 @@
-/* Base styles */
-body {
-  font-family: "Roboto", sans-serif;
-  color: #434455;
-  background-color: #ffffff;
+.logo-accent {
+  color: #f4f4fd;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Logo */
+/* Правильные стили логотипа */
 .logo-text {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -33,98 +13,30 @@ img {
   color: #4d5ae5;
 }
 
-/* Navigation links */
-.nav-link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #404bbf;
-}
-
-/* Contacts */
-.contacts-link {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
-.contacts-link:hover,
-.contacts-link:focus {
-  color: #404bbf;
-}
-
-/* Hero section */
-.hero {
-  background-color: #2e2f42;
-  text-align: center;
-}
-
-.hero-title {
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-}
-
-.hero-button {
-  background-color: #4d5ae5;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  background-color: #404bbf;
-}
-
-/* Features section */
-.features-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.features-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
-/* Section titles */
+/* Заголовки и тексты */
 .section-title {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: #2e2f42;
+  text-transform: capitalize;
 }
 
-/* Portfolio */
-.portfolio-title {
-  font-weight: 500;
+.portfolio-title,
+.features-title,
+.team-name {
   font-size: 20px;
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
-.portfolio-text {
+.portfolio-text,
+.features-text,
+.team-role,
+.footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -137,8 +49,7 @@ img {
 }
 
 .footer-text {
-  font-size: 16px;
+  color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
 }

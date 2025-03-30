@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
 
-    <!-- Normalize modern -->
+    <!-- Normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -22,44 +22,43 @@
   </head>
 
   <body>
-    <header class="header">
-      <nav class="nav">
-        <a href="./index.html" class="logo"
-          ><span class="logo-text">WebStudio</span></a
-        >
+    <header>
+      <nav>
+        <a href="./index.html" class="logo-text">
+          Web<span class="logo-accent">Studio</span>
+        </a>
         <ul class="nav-list">
           <li><a href="#studio" class="nav-link">Studio</a></li>
           <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
           <li><a href="#contacts" class="nav-link">Contacts</a></li>
         </ul>
       </nav>
-
-      <address class="contacts">
+      <address>
         <ul class="contacts-list">
           <li>
-            <a href="mailto:info@devstudio.com" class="contacts-link"
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com" class="contacts-link">
+              info@devstudio.com
+            </a>
           </li>
           <li>
-            <a href="tel:+110001111111" class="contacts-link"
-              >+11 (000) 111-11-11</a
-            >
+            <a href="tel:+110001111111" class="contacts-link">
+              +11 (000) 111-11-11
+            </a>
           </li>
         </ul>
       </address>
     </header>
 
     <main>
-      <!-- Section 1 -->
-      <section class="hero">
+      <!-- Hero -->
+      <section class="hero-section">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button type="button" class="hero-button">Order Service</button>
       </section>
 
-      <!-- Section 2 -->
-      <section class="features">
-        <h2 class="visually-hidden">Features</h2>
+      <!-- Features -->
+      <section class="features-section" id="studio">
+        <h2 class="section-title">Features</h2>
         <ul class="features-list">
           <li>
             <h3 class="features-title">Strategy</h3>
@@ -92,92 +91,84 @@
         </ul>
       </section>
 
-      <!-- Section 3 -->
-      <section class="team">
-        <h2 class="section-title">Our Team</h2>
+      <!-- Team -->
+      <section class="team-section">
+        <h2 class="team-title">Our Team</h2>
         <ul class="team-list">
-          <li>
+          <li class="team-card">
             <img
               src="./images/team-card-1.jpg"
               alt="Mark Guerrero"
               width="264"
             />
-            <h3 class="team-title">Mark Guerrero</h3>
-            <p class="team-text">Product Designer</p>
+            <h3 class="team-name">Mark Guerrero</h3>
+            <p class="team-role">Product Designer</p>
           </li>
-          <li>
+          <li class="team-card">
             <img src="./images/team-card-2.jpg" alt="Tom Ford" width="264" />
-            <h3 class="team-title">Tom Ford</h3>
-            <p class="team-text">Frontend Developer</p>
+            <h3 class="team-name">Tom Ford</h3>
+            <p class="team-role">Frontend Developer</p>
           </li>
-          <li>
+          <li class="team-card">
             <img
               src="./images/team-card-3.jpg"
               alt="Camila Garcia"
               width="264"
             />
-            <h3 class="team-title">Camila Garcia</h3>
-            <p class="team-text">Marketing</p>
+            <h3 class="team-name">Camila Garcia</h3>
+            <p class="team-role">Marketing</p>
           </li>
-          <li>
+          <li class="team-card">
             <img
               src="./images/team-card-4.jpg"
               alt="Daniel Wilson"
               width="264"
             />
-            <h3 class="team-title">Daniel Wilson</h3>
-            <p class="team-text">UI Designer</p>
+            <h3 class="team-name">Daniel Wilson</h3>
+            <p class="team-role">UI Designer</p>
           </li>
         </ul>
       </section>
 
-      <!-- Portfolio Section -->
+      <!-- Portfolio -->
       <section class="portfolio" id="portfolio">
         <h2 class="section-title">Our Portfolio</h2>
         <ul class="portfolio-list">
           <li class="portfolio-item">
             <img
               src="./images/portfolio-banking-app.jpg"
-              alt="Banking App Interface"
+              alt="Banking App"
               width="360"
             />
-            <div class="portfolio-info">
-              <h3 class="portfolio-title">Banking App</h3>
-              <p class="portfolio-text">App</p>
-            </div>
+            <h3 class="portfolio-title">Banking App</h3>
+            <p class="portfolio-text">App</p>
           </li>
           <li class="portfolio-item">
             <img
               src="./images/portfolio-cashless-payment.jpg"
-              alt="Cashless Payment Solution"
+              alt="Cashless Payment"
               width="360"
             />
-            <div class="portfolio-info">
-              <h3 class="portfolio-title">Cashless Payment</h3>
-              <p class="portfolio-text">Marketing</p>
-            </div>
+            <h3 class="portfolio-title">Cashless Payment</h3>
+            <p class="portfolio-text">Marketing</p>
           </li>
           <li class="portfolio-item">
             <img
               src="./images/portfolio-meditation-app.jpg"
-              alt="Meditation App Interface"
+              alt="Meditation App"
               width="360"
             />
-            <div class="portfolio-info">
-              <h3 class="portfolio-title">Meditation App</h3>
-              <p class="portfolio-text">App</p>
-            </div>
+            <h3 class="portfolio-title">Meditation App</h3>
+            <p class="portfolio-text">App</p>
           </li>
           <li class="portfolio-item">
             <img
               src="./images/portfolio-taxi-service.jpg"
-              alt="Taxi Service UI"
+              alt="Taxi Service"
               width="360"
             />
-            <div class="portfolio-info">
-              <h3 class="portfolio-title">Taxi Service</h3>
-              <p class="portfolio-text">Marketing</p>
-            </div>
+            <h3 class="portfolio-title">Taxi Service</h3>
+            <p class="portfolio-text">Marketing</p>
           </li>
           <li class="portfolio-item">
             <img
@@ -185,30 +176,27 @@
               alt="Screen Illustrations"
               width="360"
             />
-            <div class="portfolio-info">
-              <h3 class="portfolio-title">Screen Illustrations</h3>
-              <p class="portfolio-text">Design</p>
-            </div>
+            <h3 class="portfolio-title">Screen Illustrations</h3>
+            <p class="portfolio-text">Design</p>
           </li>
           <li class="portfolio-item">
             <img
               src="./images/portfolio-online-courses.jpg"
-              alt="Online Courses UI"
+              alt="Online Courses"
               width="360"
             />
-            <div class="portfolio-info">
-              <h3 class="portfolio-title">Online Courses</h3>
-              <p class="portfolio-text">Marketing</p>
-            </div>
+            <h3 class="portfolio-title">Online Courses</h3>
+            <p class="portfolio-text">Marketing</p>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer class="footer">
-      <a href="./index.html" class="logo"
-        ><span class="logo-text">WebStudio</span></a
-      >
+    <!-- Footer -->
+    <footer class="footer" id="contacts">
+      <a href="./index.html" class="logo-text">
+        Web<span class="logo-accent">Studio</span>
+      </a>
       <p class="footer-text">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
