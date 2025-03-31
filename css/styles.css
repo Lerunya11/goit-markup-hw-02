@@ -1,22 +1,24 @@
-/* Base Styles */
+/* Базовые стили */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
-  margin: 0;
 }
 
-/* Reset */
-ul,
-ol {
+ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a:hover,
+a:focus {
+  color: #404bbf;
 }
 
 img {
@@ -25,8 +27,8 @@ img {
   height: auto;
 }
 
-/* Logo */
-.logo {
+/* Логотип */
+.logo-text {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -36,11 +38,11 @@ img {
   color: #4d5ae5;
 }
 
-.logo-part {
-  color: #4d5ae5;
+.logo-accent {
+  color: #2e2f42;
 }
 
-/* Navigation */
+/* Header */
 .nav-list {
   display: flex;
   gap: 40px;
@@ -54,22 +56,12 @@ img {
   color: #2e2f42;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #404bbf;
-}
-
-/* Contacts */
-.contacts-list {
-  display: flex;
-  gap: 40px;
-}
-
 .contacts-link {
+  font-style: normal;
+  color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
 }
 
 .contacts-link:hover,
@@ -78,30 +70,32 @@ img {
 }
 
 /* Hero Section */
-.hero {
-  background-color: #2e2f42;
+.hero-section {
   text-align: center;
-  padding: 60px 0;
+  background-color: #2e2f42;
+  color: #ffffff;
+  padding: 120px 0;
 }
 
 .hero-title {
   font-size: 56px;
+  font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: #ffffff;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .hero-button {
-  background-color: #4d5ae5;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: inherit;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  cursor: pointer;
+  color: #ffffff;
+  background-color: #4d5ae5;
   border: none;
+  border-radius: 4px;
+  cursor: pointer;
   padding: 16px 32px;
 }
 
@@ -112,17 +106,7 @@ img {
 
 /* Features Section */
 .features-section {
-  background-color: #ffffff;
-  padding: 60px 0;
-}
-
-.features-list {
-  display: flex;
-  gap: 24px;
-}
-
-.features-item {
-  width: calc((100% - 72px) / 4);
+  padding: 120px 0;
 }
 
 .features-title {
@@ -131,6 +115,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .features-text {
@@ -143,28 +128,17 @@ img {
 /* Team Section */
 .team-section {
   background-color: #f4f4fd;
-  padding: 60px 0;
-  text-align: center;
+  padding: 120px 0;
 }
 
 .team-title {
   font-size: 36px;
   line-height: 1.11;
+  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  margin-bottom: 24px;
-}
-
-.team-list {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-}
-
-.team-item {
-  background-color: #ffffff;
-  padding-bottom: 24px;
+  margin-bottom: 72px;
 }
 
 .team-name {
@@ -173,8 +147,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 16px;
-  margin-bottom: 8px;
 }
 
 .team-role {
@@ -185,30 +157,9 @@ img {
 }
 
 /* Portfolio Section */
-.portfolio-section {
-  background-color: #ffffff;
-  padding: 60px 0;
-  text-align: center;
-}
-
-.section-title {
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
-  margin-bottom: 24px;
-}
-
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: center;
-}
-
-.portfolio-item {
-  background-color: #ffffff;
+.portfolio {
+  background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .portfolio-title {
@@ -217,7 +168,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 16px;
+  margin-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -231,16 +182,15 @@ img {
 /* Footer */
 .footer {
   background-color: #2e2f42;
-  padding: 60px 0;
+  color: #f4f4fd;
+  padding: 100px 0;
   text-align: center;
 }
 
 .footer-text {
-  color: #f4f4fd;
+  color: var(--footer-text-color, #f4f4fd);
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.logo-part.footer {
-  color: #f4f4fd;
+  margin-top: 16px;
 }
