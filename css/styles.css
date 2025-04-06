@@ -41,7 +41,7 @@ img {
 }
 
 .logo-accent {
-  color: #f4f4fd;
+  color: #2e2f42;
 }
 
 .nav-list {
@@ -83,6 +83,7 @@ img {
 .hero-section {
   background-color: #2e2f42;
   text-align: center;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -91,6 +92,8 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
   text-align: center;
+  max-width: 496px;
+  margin: 0 auto 48px;
 }
 
 .hero-button {
@@ -103,7 +106,7 @@ img {
   color: #ffffff;
   cursor: pointer;
   border: none;
-  padding: 12px 24px;
+  padding: 16px 32px;
   border-radius: 4px;
 }
 
@@ -124,6 +127,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .features-list {
@@ -141,6 +145,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .features-text {
@@ -163,6 +168,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -183,6 +189,8 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-role {
@@ -190,6 +198,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin: 0;
 }
 
 /* Portfolio section */
@@ -201,11 +210,23 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  justify-content: center;
 }
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
   background-color: #ffffff;
+}
+
+.portfolio-card {
+  border: 1px solid #e7e9fc;
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  display: flex;
+  flex-direction: column;
+  width: 360px;
 }
 
 .portfolio-title {
@@ -214,6 +235,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin: 32px 16px 8px;
 }
 
 .portfolio-text {
@@ -221,6 +243,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin: 0 16px 32px;
 }
 
 /* Footer */
@@ -231,7 +254,9 @@ img {
 }
 
 .footer-text {
-  color: var(--light, #f4f4fd);
+  color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin: 0 auto;
+  max-width: 264px;
 }
