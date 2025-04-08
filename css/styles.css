@@ -24,7 +24,6 @@ a:focus {
 }
 
 img {
-  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -40,8 +39,12 @@ img {
   color: #4d5ae5;
 }
 
-.logo-accent {
+.logo-accent-dark {
   color: #2e2f42;
+}
+
+.logo-accent-light {
+  color: #f4f4fd;
 }
 
 .nav-link {
