@@ -76,6 +76,17 @@ img {
   background-color: #2e2f42;
   text-align: center;
 }
+.hero-section {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* padding оставим как было: 188px 0 */
+}
 
 .hero-title {
   font-size: 56px;
